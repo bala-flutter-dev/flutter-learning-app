@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learning_app/Screens/widget_detail.dart';
 import 'package:flutter_learning_app/Styles/colors.dart';
+import 'package:flutter_learning_app/comman_widgets/alert_box.dart';
+import 'package:get/get.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
@@ -10,11 +12,19 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
+  alertBox() {
+    return Get.defaultDialog(
+      title: 'Make this favourite',
+      cancel: ElevatedButton(onPressed: () {}, child: const Text("Cancel")),
+      confirm: ElevatedButton(onPressed: () {}, child: const Text("Confirm")),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
-      backgroundColor: Color(0xff1a237e),
+      backgroundColor: const Color(0xff1a237e),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -37,9 +47,15 @@ class _SettingsPageState extends State<SettingsPage> {
                               fontFamily: 'Kanit',
                               color: AppColors.secondaryColor)),
                     ),
-                    const Icon(
-                      Icons.settings,
-                      color: AppColors.secondaryColor,
+                    GestureDetector(
+                      onTap: () {
+                        alertBox();
+                        print("Pressed");
+                      },
+                      child: const Icon(
+                        Icons.settings,
+                        color: AppColors.secondaryColor,
+                      ),
                     ),
                   ],
                 ),
