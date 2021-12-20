@@ -42,7 +42,7 @@ class _WidgetDetailState extends State<WidgetDetail> {
                               Text("Description: ",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      color: AppColors.primaryColor1,
+                                      color: AppColors.primary1,
                                       fontSize: 20)),
                               SizedBox(height: 10),
                               Text(
@@ -54,7 +54,7 @@ class _WidgetDetailState extends State<WidgetDetail> {
                               Text("Constructors: ",
                                   style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      color: AppColors.primaryColor1,
+                                      color: AppColors.primary1,
                                       fontSize: 20)),
                               Text(
                                   "The Text widget displays a string of text with single style. The string might break across multiple lines or might all be displayed on the same line depending on the layout constraints.",

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_learning_app/Screens/home_page.dart';
-import 'package:flutter_learning_app/Screens/settings_page.dart';
+import 'package:flutter_learning_app/screens/home_page.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Learning App',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: 'Kanit'),
       home: const HomePage(),
     );

@@ -23,7 +23,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   fontSize: 18,
                   fontWeight: FontWeight.bold),
             )),
-            decoration: BoxDecoration(color: AppColors.primaryColor1),
+            decoration: BoxDecoration(color: AppColors.primary1),
           ),
           Padding(
             padding: EdgeInsets.all(10),

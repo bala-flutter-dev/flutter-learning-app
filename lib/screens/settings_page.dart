@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learning_app/Screens/widget_detail.dart';
 import 'package:flutter_learning_app/Styles/colors.dart';
-import 'package:flutter_learning_app/comman_widgets/alert_box.dart';
 import 'package:get/get.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -45,16 +44,16 @@ class _SettingsPageState extends State<SettingsPage> {
                               fontSize: 30,
                               fontWeight: FontWeight.bold,
                               fontFamily: 'Kanit',
-                              color: AppColors.secondaryColor)),
+                              color: AppColors.primary)),
                     ),
                     GestureDetector(
                       onTap: () {
                         alertBox();
-                        print("Pressed");
+                        //print("Pressed");
                       },
                       child: const Icon(
                         Icons.settings,
-                        color: AppColors.secondaryColor,
+                        color: AppColors.primary,
                       ),
                     ),
                   ],
@@ -62,7 +61,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 const SizedBox(height: 10),
                 const Divider(
                   height: 0,
-                  color: AppColors.secondaryColor,
+                  color: AppColors.primary,
                   thickness: 2,
                 ),
                 const SizedBox(height: 25),
@@ -113,7 +112,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     const ListTile(
                       leading: Icon(
                         Icons.phone,
-                        color: AppColors.secondaryColor,
+                        color: AppColors.primary1,
                       ),
                       title: Text(
                         "Contact us",
@@ -133,7 +132,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     const ListTile(
                       leading: Icon(
                         Icons.bug_report,
-                        color: AppColors.secondaryColor,
+                        color: AppColors.primary,
                       ),
                       title: Text(
                         "Report bug",
